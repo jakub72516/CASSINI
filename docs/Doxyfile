@@ -1,0 +1,14 @@
+# Doxyfile — Cassini documentation configuration.
+PROJECT_NAME           = "Cassini"
+PROJECT_BRIEF          = "Real-time N-body relativistic solar system simulator"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = include README.md
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+FILE_PATTERNS          = *.hpp *.h
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+OPTIMIZE_OUTPUT_FOR_C  = NO

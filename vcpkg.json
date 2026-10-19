@@ -1,0 +1,32 @@
+{
+  "name": "cassini",
+  "version-string": "0.1.0",
+  "description": "Real-time N-body relativistic solar system simulator",
+  "dependencies": [
+    "hdf5",
+    "grpc",
+    "rapidcheck",
+    "catch2",
+    "fmt",
+    "spdlog",
+    "glm"
+  ],
+  "features": {
+    "render": {
+      "description": "OpenGL renderer",
+      "dependencies": ["glfw3", "glad"]
+    },
+    "telemetry": {
+      "description": "gRPC live telemetry",
+      "dependencies": ["grpc", "protobuf"]
+    },
+    "hdf5": {
+      "description": "HDF5 / SPICE export",
+      "dependencies": ["hdf5"]
+    },
+    "tests": {
+      "description": "Test dependencies",
+      "dependencies": ["catch2", "rapidcheck"]
+    }
+  }
+}

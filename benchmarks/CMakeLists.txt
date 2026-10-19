@@ -1,0 +1,2 @@
+add_executable(cassini_benchmark bench/throughput.cpp)
+target_link_libraries(cassini_benchmark PRIVATE cassini)
